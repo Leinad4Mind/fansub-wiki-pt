@@ -1,0 +1,55 @@
+<!--
+title: Temporização
+description: Ajustar legendas com o som e imagem
+published: true
+date: 2024-05-31T00:30:45.344Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-11-11T01:25:01.959Z
+-->
+
+<h2>O que é a temporização?</h2>
+<p>A temporização de legendas consiste na sincronização da legenda com o áudio, garantindo, ao mesmo tempo, que o espectador as lê correctamente.</p>
+<ul>
+  <li>Gerar <i>keyframes;</i></li>
+  <li>Temporização Manual (Aegisub)</li>
+  <li>Ajuste de Tempo (Aegisub)</li>
+  <li>Pós-processador de Tempo (Aegisub)</li>
+</ul>
+<p>&nbsp;</p>
+<p>Basta colocar o cursor inicial logo no início da fala e o cursor logo no final da fala (não é preciso dar grandes folgas)</p>
+<p>Podes já colocar o cursor (inicial ou final) numa linha de keyframe (rosa), senão também não há problema que o TPP depois resolve isso</p>
+<p>Depois é só correr o Timing post processor com umas definições que tenho e puff</p>
+<p>No final é só verificar a correr se há linhas vermelhas, ou seja, linhas sobrepostas para melhorar o timing</p>
+<p>Ou ver se há alguma linha cujos CPS estejam à vermelho</p>
+<p>Essa linha pode ter pouco tempo de leitura</p>
+<p>&nbsp;</p>
+<p>E instalar o "create_keyframes.bat"</p>
+<p>Depois é só clicar em botão direito do rato num ficheiro de vídeo, ir a "enviar para..." e tem lá a opção de criar os keyframes</p>
+<p>Ele fica a processar e depois criar um ficheiro txt na mesma pasta</p>
+<p>&nbsp;</p>
+<ul>
+  <li>Q - reproduz uns millissegundos antes do cursor inicial</li>
+  <li>W - reproduz uns millissegundos depois do cursor final</li>
+  <li>A -scoll na faixa de áudio para a direita</li>
+  <li>F- scoll na faixa de áudio para a direita</li>
+  <li>S -reproduz a selecção de áudio</li>
+  <li>E - reproduz uns millissegundos depois do cursor inicial</li>
+  <li>D- reproduz uns millissegundos antes do cursor final</li>
+  <li>G - confirma as alterações e vai para a faixa seguinte</li>
+</ul>
+<p>faz o timing naquele modo de analisador de espectro</p>
+<p>e ajusta as ondas através daquelas barrinhas no canto superior direito</p>
+<p>com a mão esquerda vai-te habituar a usar esses atalhos todos</p>
+<p>e botão esquerdo do rato - coloca o cursor inicial</p>
+<p>botão direito do rato - coloca o cursor final</p>
+<p>&nbsp;</p>
+<p>só pelo espectro vejo logo onde começa a fala</p>
+<p>confirmo com aquelas teclas de atalho, o fim é ali no keyframe</p>
+<p>aquela definição inicial serve para quando carregas com o rato ele vai logo direto ao keyframe, não precisas de andar a arrastar</p>
+<p>clico no G, pumba</p>
+<p>2 segundos fiz o timing de uma fala</p>
+<p>depois começas a ganhar o ritmo e experiência. E identificas mais facilmente as falas pelo espectro</p>
+<p>não tens de ouvir a fala toda, só inicio e fim</p>
+<p>só tens de fazer o áudio do estilo "Diálogos" e "Preview"</p>
+<p>&nbsp;</p>
