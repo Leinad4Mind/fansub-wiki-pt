@@ -2,18 +2,52 @@
 title: Temporização
 description: Ajustar legendas com o som e imagem
 published: true
-date: 2024-05-31T01:23:03.944Z
+date: 2024-05-31T01:39:16.043Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-11T01:25:01.959Z
 -->
 
 <p>A temporização de legendas consiste na sincronização da legenda com o áudio, garantindo, ao mesmo tempo, que o espectador as lê correctamente.</p>
+<p>Antes demais, precisam de ter conhecimento dos seguintes termos:</p>
 <ul>
-  <li>Gerar <i>keyframes;</i></li>
-  <li>Temporização Manual (Aegisub)</li>
+  <li><i><strong>Lead in</strong></i> – The time from the start of the subtitle to the start of the audio.</li>
+  <li><i><strong>Lead out</strong></i> – The time from the end of the audio to the end of the subtitle.</li>
+  <li><i><strong>Keyframe</strong></i><strong> </strong>– A keyframe denotes a scene change, most of the time.</li>
+  <li><strong>Linhas adjacentes</strong> – 2 subtitle lines which are directly next to each other.</li>
+  <li><strong>ms </strong>– milliseconds, (1/1000 of a second).</li>
+  <li><i><strong>Scene bleed</strong></i> –</li>
+</ul>
+<h2>Gerar <i>keyframes</i></h2>
+<p>&nbsp;</p>
+<h2>Temporização Manual</h2>
+<p>&nbsp;</p>
+<h3>Atalhos:</h3>
+<ul>
+  <li>Botão esquerdo do rato = Início da linha</li>
+  <li>Botão direito do rato = Fim da linha</li>
+  <li>Q = Reproduz 500ms antes do início da linha</li>
+  <li>W = Reproduz 500ms depois do fim da linha</li>
+  <li>S = Reproduz a linha actual do início ao fim;</li>
+  <li>E = Reproduz os primeiros 500ms da linha;</li>
+  <li>D = Reproduz os últimos 500ms da linha;</li>
+  <li>A = Desloca a visualização da faixa de áudio para a esquerda</li>
+  <li>F = Desloca a visualização da faixa de áudio para a esquerda</li>
+  <li>G = Confirma todas as alterações.</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+  <li>C = Add lead in. (125 ms)</li>
+  <li>V = Add lead out. (500 ms)</li>
+  <li>Shift + Right Mouse Click = End the line and snap to nearby keyframe.</li>
+</ul>
+<p>&nbsp;</p>
+<h2><i>Timing Post-Processor</i></h2>
+<p>&nbsp;</p>
+<ul>
   <li>Ajuste de Tempo (Aegisub)</li>
-  <li>Pós-processador de Tempo (Aegisub)</li>
+  <li>&nbsp;</li>
 </ul>
 <p>&nbsp;</p>
 <p>Basta colocar o cursor inicial logo no início da fala e o cursor logo no final da fala (não é preciso dar grandes folgas)</p>
@@ -28,14 +62,7 @@ dateCreated: 2023-11-11T01:25:01.959Z
 <p>Ele fica a processar e depois criar um ficheiro txt na mesma pasta</p>
 <p>&nbsp;</p>
 <ul>
-  <li>Q - reproduz uns millissegundos antes do cursor inicial</li>
-  <li>W - reproduz uns millissegundos depois do cursor final</li>
-  <li>A -scoll na faixa de áudio para a direita</li>
-  <li>F- scoll na faixa de áudio para a direita</li>
-  <li>S -reproduz a selecção de áudio</li>
-  <li>E - reproduz uns millissegundos depois do cursor inicial</li>
-  <li>D- reproduz uns millissegundos antes do cursor final</li>
-  <li>G - confirma as alterações e vai para a faixa seguinte</li>
+  <li>&nbsp;</li>
 </ul>
 <p>faz o timing naquele modo de analisador de espectro</p>
 <p>e ajusta as ondas através daquelas barrinhas no canto superior direito</p>
