@@ -2,7 +2,7 @@
 title: Temporização
 description: Ajustar Legendas com o Áudio e Imagem
 published: true
-date: 2025-07-12T01:09:43.622Z
+date: 2025-07-12T01:27:56.579Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-05T15:08:25.728Z
@@ -12,12 +12,14 @@ dateCreated: 2024-10-05T15:08:25.728Z
 <p>As legendas devem aparecer ligeiramente antes da fala começar (<i>lead-in</i>) e desaparecer ligeiramente depois da fala terminar (<i>lead-out</i>), desta forma garante-se que há um tempo de leitura adequado.</p>
 <p>Antes de mais, é necessário estar a par dos seguintes termos:</p>
 <ul>
-  <li><i><strong>Lead in</strong></i> – O tempo entre o início da legenda e o início do áudio;</li>
-  <li><i><strong>Lead out</strong></i> – O tempo entre o fim do áudio e o fim da legenda;</li>
-  <li><i><strong>Keyframe</strong></i><strong> </strong>– Marca que indica uma mudança de cena (maior parte das vezes);</li>
-  <li><strong>Linhas adjacentes</strong> – Duas linhas coladas uma a seguir à outra;</li>
+  <li><i><strong>Lead in</strong></i> – Tempo extra entre o início da legenda e o início do áudio;</li>
+  <li><i><strong>Lead out</strong></i> – Tempo extra entre o fim do áudio e o fim da legenda;</li>
+  <li><i><strong>Keyframe</strong></i><strong> </strong>– <i>Frame</i> onde ocorre uma mudança de cena (maior parte das vezes);</li>
+  <li><strong>Linhas adjacentes</strong> – Duas linhas coladas uma a seguir à outra (o tempo final é igual ao tempo inicial da linha seguinte);</li>
   <li><strong>ms </strong>– Milissegundos (1/1000 de um segundo);</li>
-  <li><i><strong>Scene bleed</strong></i> –</li>
+  <li><i><strong>Scene bleed</strong></i> – Uma linha cujo tempo final está definido depois da mudança de cena (<i>keyframe</i>). Ou tempo inicial está definido antes da mudança de cena.</li>
+  <li><strong>FPS </strong>– <i>Frames</i> Por Segundo;</li>
+  <li><strong>CPS </strong>– Caracteres Por Segundo</li>
 </ul>
 <h2>Gerar <i>Keyframes</i></h2>
 <p>MAKE SURE YOU GENERATE A PASS FILE BEFORE YOU TIME.&nbsp;</p>
@@ -54,6 +56,8 @@ dateCreated: 2024-10-05T15:08:25.728Z
   <li>Shift + Right Mouse Click = End the line and snap to nearby keyframe.</li>
 </ul>
 <p>&nbsp;</p>
+<p><strong>Lembrete:</strong> A prática faz a perfeição!</p>
+<p>&nbsp;</p>
 <h2>Pós-Processador de Tempo</h2>
 <p>Basta colocar o cursor inicial logo no início da fala e o cursor logo no final da fala (não é preciso dar grandes folgas)</p>
 <p>Podes já colocar o cursor (inicial ou final) numa linha de keyframe (rosa), senão também não há problema que o TPP depois resolve isso</p>
@@ -80,6 +84,9 @@ dateCreated: 2024-10-05T15:08:25.728Z
 <figure class="image image_resized" style="width:72.22%;"><img src="/tutoriais/timing_post-processor.png"></figure>
 <p>&nbsp;</p>
 <h2>Ajustar Tempos</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Temporização Manual</h2>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>https://doki.co/support/doki-timing-guide/</p>
