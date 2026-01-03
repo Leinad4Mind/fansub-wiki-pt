@@ -1,0 +1,10 @@
+[FICHEIRO]
+{{ 'Data       : ' + date + '\n'       if write_date       else '' -}}
+{{ 'Programa   : ' + generator + '\n'  if write_generator  else '' -}}
+{{ 'Nick       : ' + nickname + '\n'   if write_nickname   else '' -}}
+
+{{ '\n' }}[DATA]
+{% for comment in comments -%}
+[{{ comment['time'] | as_time }}] [{{ comment['commentType'] | as_comment_type }}] {{ comment['comment'] | trim }}
+{% endfor -%}
+N.º total de linhas: {{ comments | count }}
